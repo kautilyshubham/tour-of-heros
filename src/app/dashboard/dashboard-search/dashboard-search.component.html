@@ -1,0 +1,19 @@
+
+
+
+<div class="col-sm-8">
+    <div class="well">
+        <h3>Search for your Heroes</h3>
+        <input type="text" class="form-control" [(ngModel)]="search" >
+        <br>
+        <div class="col-sm-6 col-sm-offset-3">
+            <br>
+                <ul class="text-center">
+                       <a > <li class="list-group-item" *ngFor="let hero of heroes | filter:search ">
+                           <strong>{{hero.name}}</strong> </li></a>
+                 </ul>
+        </div>
+        
+      </div>
+      
+</div>

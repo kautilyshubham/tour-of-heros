@@ -1,0 +1,20 @@
+
+<div class="row">
+  <div class="col-sm-6 ">
+      <ul >
+        <li class="list-group-item" *ngFor="let hero of heroes; let i=index"> 
+            <a [routerLink]="['/detail', hero.id]">
+             <span class="badge"> {{hero.id}}</span>  <strong>{{hero.name}}</strong>
+            </a>
+            <button class="badge" (click)="oncut(i)">X</button>
+          </li> 
+        
+       
+        </ul>
+  </div>
+
+  <div class="col-sm-6">
+  <app-add-heroes></app-add-heroes>    
+  </div>
+
+</div>

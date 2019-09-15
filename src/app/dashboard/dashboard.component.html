@@ -1,0 +1,14 @@
+<div class="row">
+  <h2> These are top heroes !!!!!!!!!</h2>
+ 
+  <div class="div1" *ngFor="let hero of heroes | limitTo : 7">
+   <a [routerLink]="['/detail',hero.id]"> 
+     <h4>{{hero.name}}</h4>
+     <p>{{hero.desc}}</p>
+  </a>
+  </div>
+</div>
+<hr>
+<div class="row">
+    <app-dashboard-search></app-dashboard-search>
+</div>

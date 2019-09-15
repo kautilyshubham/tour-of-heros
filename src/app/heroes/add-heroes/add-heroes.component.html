@@ -1,0 +1,16 @@
+<div class="row">
+  <h2>Add New Heroes...</h2>
+  <form #f="ngForm"  >
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" ngModel required >
+    </div>
+    <div class="form-group">
+        <label>Desc</label>
+        <input type="text" name="desc" class="form-control" ngModel required >
+      </div>
+      <button class="btn btn-danger" type="button" (click)="onClear(f)" >Clear</button>
+      <button class="btn btn-success" type="Submit" (click)=onSave(f)  >Save</button>
+      
+  </form>
+</div>
